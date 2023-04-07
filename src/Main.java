@@ -4,16 +4,18 @@ public class Main {
     public static void main(String[] args) {
 
         int balance = 100;
-        int topup = 2000;
-        int bonus = (topup / 100) - (balance / 100);
+        int topup = 1100;
+        int bonus = 0;
+
         if (topup > 1000) {
-            bonus++;
+            bonus = (topup / 100);
         }
+
         int totalbalance = balance + topup + bonus;
 
 
-        System.out.println("Общий счет:" + totalbalance + "рублей");
-        System.out.println("Бонусные рубли:" + bonus);
+        System.out.println(" Общий счет: " + totalbalance + " рублей ");
+        System.out.println("Бонусные рубли: " + bonus + " рублей ");
 
     }
 }
