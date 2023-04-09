@@ -7,15 +7,15 @@ public class Main {
         int topup = 1100;
         int bonus = 0;
 
-        if (topup >= 1000) {
+        if (topup > 1000) {
             bonus = (topup / 100);
         } else {
             bonus = 0;
         }
-        int totalbalance = balance + topup + bonus;
+        int totalBalance = balance + topup + bonus;
 
 
-        System.out.println(" Общий счет: " + totalbalance + " рублей ");
+        System.out.println(" Общий счет: " + totalBalance + " рублей ");
         System.out.println("Бонусные рубли: " + bonus + " рублей ");
 
     }
